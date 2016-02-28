@@ -1,0 +1,22 @@
+html
+    head
+        //- bower:css
+        
+        //-endbower
+        //-bower:js
+        
+        //endbower
+        //inject:css
+        
+        //endinject
+        //inject:js
+        
+        //endinject
+        title MyApp
+    body(class="myClass")
+        h1(id ="MyId") My App
+        p
+            h3 sub heading
+            ul
+                each val in list
+                    li=val

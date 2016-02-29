@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <meta charset="utf-8">
-    <title>Storystrap Template</title>
-    <meta name="generator" content="Bootply" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <title>Staging Manager</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <meta name="description" content="Developed By M Abdur Rokib Promy">
+    <meta name="keywords" content="Admin, Bootstrap 3, Template, Theme, Responsive">
+
+
     <!-- bower:css -->
     <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css" />
@@ -18,177 +18,245 @@
     <script src="/lib/bootstrap/dist/js/bootstrap.js"></script>
     <!-- endbower -->
     <!-- inject:css -->
-    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/easypiechart.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/gmap.css">
+    <link rel="stylesheet" href="/css/ionicons.css">
+    <link rel="stylesheet" href="/css/ionicons.min.css">
+    <link rel="stylesheet" href="/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="/css/jquery.ui.plupload.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/bootstrap-slider/slider.css">
+    <link rel="stylesheet" href="/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.css">
+    <link rel="stylesheet" href="/css/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="/css/bs-datetimepicker/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="/css/bs-datetimepicker/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="/css/colorpicker/bootstrap-colorpicker.css">
+    <link rel="stylesheet" href="/css/colorpicker/bootstrap-colorpicker.min.css">
+    <link rel="stylesheet" href="/css/datatables/dataTables.bootstrap.css">
+    <link rel="stylesheet" href="/css/daterangepicker/daterangepicker-bs3.css">
+    <link rel="stylesheet" href="/css/datepicker/datepicker3.css">
+    <link rel="stylesheet" href="/css/fullcalendar/fullcalendar.css">
+    <link rel="stylesheet" href="/css/fullcalendar/fullcalendar.print.css">
+    <link rel="stylesheet" href="/css/iCheck/all.css">
+    <link rel="stylesheet" href="/css/ionslider/ion.rangeSlider.css">
+    <link rel="stylesheet" href="/css/ionslider/ion.rangeSlider.skinFlat.css">
+    <link rel="stylesheet" href="/css/ionslider/ion.rangeSlider.skinNice.css">
+    <link rel="stylesheet" href="/css/jQueryUI/jquery-ui-1.10.3.custom.css">
+    <link rel="stylesheet" href="/css/jQueryUI/jquery-ui-1.10.3.custom.min.css">
+    <link rel="stylesheet" href="/css/morris/morris.css">
+    <link rel="stylesheet" href="/css/jvectormap/jquery-jvectormap-1.2.2.css">
+    <link rel="stylesheet" href="/css/multiselect/multi-select.css">
+    <link rel="stylesheet" href="/css/timepicker/bootstrap-timepicker.css">
+    <link rel="stylesheet" href="/css/timepicker/bootstrap-timepicker.min.css">
     <!-- endinject -->
     <!-- inject:js -->
     <script src="/js/app.js"></script>
     <!-- endinject -->
+
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
-    <link href="css/styles.css" rel="stylesheet">
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+          <![endif]-->
+
+    <style type="text/css">
+
+    </style>
 </head>
 
-<body>
-    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
-        <div class="container">
-            <div class="navbar-header">
-                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a href="/" class="navbar-brand">Home</a>
-            </div>
-            <nav class="collapse navbar-collapse" role="navigation">
-                <ul class="nav navbar-nav">
-                    <% for(var i = 0; i < nav.length;i++){%>
-                        <li>
-                            <a href="<%=nav[i].Link%>">
-                                <%=nav[i].Text%>
-                            </a>
-                        </li>
-                        <%}%>
-                </ul>
-                <ul class="nav navbar-right navbar-nav">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="glyphicon glyphicon-search"></i></a>
-                        <ul class="dropdown-menu" style="padding:12px;">
-                            <form class="form-inline">
-                                <button type="submit" class="btn btn-default pull-right"><i class="glyphicon glyphicon-search"></i></button>
-                                <input type="text" class="form-control pull-left" placeholder="Search">
-                            </form>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </div>
+<body class="skin-black">
+    <!-- header logo: style can be found in header.less -->
+    <header class="header">
+        <a href="index.html" class="logo">
+                Staging Manager
+            </a>
+
     </header>
+    <div class="wrapper row-offcanvas row-offcanvas-left">
+        <!-- Left side column. contains the logo and sidebar -->
+        <aside class="left-side sidebar-offcanvas">
+            <!-- sidebar: style can be found in sidebar.less -->
+            <section class="sidebar">
+                <!-- Sidebar user panel -->
 
-    <div id="masthead">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7">
-                    <h1>Storystrap
-          <p class="lead"></p>
-        </h1>
-                </div>
-                <div class="col-md-5">
-                    <div class="well well-lg">
-                        <div class="row">
-                            <div class="col-sm-12">
+                <!-- search form -->
+                <form action="#" method="get" class="sidebar-form">
+                    <div class="input-group">
+                        <input type="text" name="q" class="form-control" placeholder="Search..." />
+                        <span class="input-group-btn">
+                                        <button type='submit' name='seach' id='search-btn' class="btn btn-flat"><i class="fa fa-search"></i></button>
+                                    </span>
+                    </div>
+                </form>
+                <!-- /.search form -->
+                <!-- sidebar menu: : style can be found in sidebar.less -->
+                <ul class="sidebar-menu">
+                    <li class="active">
+                        <a href="index.html">
+                            <i class="fa fa-dashboard"></i> <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="general.ejs">
+                            <i class="fa fa-gavel"></i> <span>General</span>
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="basic_form.ejs">
+                            <i class="fa fa-globe"></i> <span>Basic Elements</span>
+                        </a>
+                    </li>
 
+                    <li>
+                        <a href="simple.ejs">
+                            <i class="fa fa-glass"></i> <span>Simple tables</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </section>
+            <!-- /.sidebar -->
+        </aside>
+
+        <aside class="right-side">
+
+            <!-- Main content -->
+            <section class="content">
+
+                <div class="row" style="margin-bottom:5px;">
+
+                    <div class="col-md-3">
+                        <div class="sm-st clearfix">
+                            <span class="sm-st-icon st-violet"><i class="fa fa-tag"></i></span>
+                            <div class="sm-st-info">
+                                <span>Deployed</span>Build Number:
+                                <%=deployedBuild.number%>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <!-- /cont -->
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="top-spacer"> </div>
-                </div>
-            </div>
-        </div>
-        <!-- /cont -->
-
-    </div>
-
-
-    <div class="container">
-        <div class="row">
-
-            <div class="col-md-12">
-
-                <div class="panel">
-                    <div class="panel-body">
-
-
-
-                        <!--/stories-->
-                        <div class="row">
-                            <br>
-                            <div class="col-md-2 col-sm-3 text-center">
-                                Sign In
-                                <form name="signInForm" action="/auth/signIn" method="post">
-                                    <input name="userName" id="userName">
-                                    <input name="password" id="password">
-                                    <input type="submit" value="Sign In">
-
-                                </form>
-                            </div>
-                            <div class="col-md-10 col-sm-9">
-                                Sign Up
-                                <form name="signUpForm" action="/auth/signUp" method="post">
-                                    <input name="userName" id="userName">
-                                    <input name="password" id="password">
-                                    <input type="submit" value="Sign Up">
-
-                                </form>
+                    <div class="col-md-3">
+                        <div class="sm-st clearfix">
+                            <span class="sm-st-icon st-green"><i class="fa fa-archive"></i></span>
+                            <div class="sm-st-info">
+                                <span><%=builds.length%></span> Total Builds
                             </div>
                         </div>
+                    </div>
 
-                        <!--/stories-->
+
+                </div>
+
+                <!-- Main row -->
+                <div class="row">
+
+                    <div class="col-md-16">
+                        <!--earning graph start-->
+                        <section class="panel">
+                            <header class="panel-heading">
+                                Builds
+                            </header>
+                            <div class="panel-body table-responsive">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Build Number</th>
+                                            <th>Artifact ID</th>
+                                            <!-- <th>Client</th> -->
+                                            <th>Created</th>
+                                            <!-- <th>Price</th> -->
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <% builds.reverse()
+                                            for(var i = 0; i < builds.length;i++){%>
+
+                                            <tr>
+                                                <td>
+                                                    <%=builds[i].number%>
+                                                </td>
+                                                <td>
+                                                    <%=builds[i].artifactId%>
+                                                </td>
+                                                <!-- <td>Steve</td> -->
+                                                <td>
+                                                    <%=builds[i].createdDate%>
+                                                </td>
+                                                <!-- <td>$1500</td> -->
+                                                <% if(builds[i].deployed == true){ %>
+                                                    <td><span class="label label-success">deployed</span></td>
+                                                    <% } else{ %>
+                                                        <td>
+                                                            <button class="btn btn-primary btn-addon btn-sm">
+                                                                <i class="fa fa-plus"></i> Deploy
+                                                            </button>
+                                                        </td>
+                                                        <% } %>
+
+                                            </tr>
+                                            <%}%>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </section>
+                        <!--earning graph end-->
+
+                    </div>
 
 
-                        <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+                </div>
+                <div class="row">
+
+                    <div class="col-md-8">
+
 
 
                     </div>
-                </div>
+                    <!--end col-6 -->
 
-
-
-            </div>
-            <!--/col-12-->
-        </div>
-    </div>
-
-
-    <hr>
-
-    <div class="container" id="footer">
-        <div class="row">
-            <div class="col col-sm-12">
-
-                <h1>Follow Us</h1>
-                <div class="btn-group">
-                    <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
-                    <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
-                    <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
-    <hr>
-
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <ul class="list-inline">
-                        <li><i class="icon-facebook icon-2x"></i></li>
-                        <li><i class="icon-twitter icon-2x"></i></li>
-                        <li><i class="icon-google-plus icon-2x"></i></li>
-                        <li><i class="icon-pinterest icon-2x"></i></li>
-                    </ul>
 
                 </div>
-                <div class="col-sm-6">
-                    <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>
-                </div>
-            </div>
-        </div>
-    </footer>
+                <!-- ./wrapper -->
+
+
+                <!-- jQuery 2.0.2 -->
+                <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+                <script src="js/jquery.min.js" type="text/javascript"></script>
+
+                <!-- jQuery UI 1.10.3 -->
+                <script src="js/jquery-ui-1.10.3.min.js" type="text/javascript"></script>
+                <!-- Bootstrap -->
+                <script src="js/bootstrap.min.js" type="text/javascript"></script>
+                <!-- daterangepicker -->
+                <script src="js/plugins/daterangepicker/daterangepicker.js" type="text/javascript"></script>
+
+                <script src="js/plugins/chart.js" type="text/javascript"></script>
+
+                <!-- datepicker
+        <script src="js/plugins/datepicker/bootstrap-datepicker.js" type="text/javascript"></script>-->
+                <!-- Bootstrap WYSIHTML5
+        <script src="js/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js" type="text/javascript"></script>-->
+                <!-- iCheck -->
+                <script src="js/plugins/iCheck/icheck.min.js" type="text/javascript"></script>
+                <!-- calendar -->
+                <script src="js/plugins/fullcalendar/fullcalendar.js" type="text/javascript"></script>
+
+                <!-- Director App -->
+                <script src="js/Director/app.js" type="text/javascript"></script>
+
+                <!-- Director dashboard demo (This is only for demo purposes) -->
+                <script src="js/Director/dashboard.js" type="text/javascript"></script>
+
 
 </body>
 

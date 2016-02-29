@@ -68,17 +68,21 @@ app.get("/", function (req, resp) {
         collection.find({}).toArray(
             function (err, results) {
                 var deployedBuild;
-                console.log("Testing");
                 for (var i = 0; i < results.length; i++) {
-                    console.log(results[i]);
                     if (results[i].deployed == true) {
                         deployedBuild = results[i];
                     }
                 }
 
                 db.close();
+                if (deployedBuild == null) {
+                    deployedBuild = {
+                        number: "None",
+                        artifactId: "None"
+                    };
+                }
                 resp.render("index", {
-                    title: "Books",
+                    title: "Staging Manager",
                     nav: nav,
                     builds: results,
                     deployedBuild: deployedBuild
